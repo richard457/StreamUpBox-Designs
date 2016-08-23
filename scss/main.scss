@@ -1,0 +1,83 @@
+body{
+    h1,h2{
+        color: #ccc;
+    }
+    
+    .upload-tpls{
+        .upload-indicator{
+            margin-left: -140px;
+        }
+        width: 800px;
+        .positioning{
+            margin-left:145px;z-index:15000;
+
+        }
+        .browse-wrap{
+            margin-left: 145px;
+            width: 100%;
+        }
+        .upload-drop-zone {
+                        height: 150px;
+                        border-width: 2px;
+                        width:400px;
+                        margin-bottom: 20px;
+                    }
+
+                    /* skin.css Style*/
+                    .upload-drop-zone {
+                        color: #ccc;
+                        border-style: dashed;
+                        border-color: #ccc;
+                        line-height: 200px;
+                        text-align: center
+                    }
+                    .upload-drop-zone.drop {
+                        color: #222;
+                        border-color: #222;
+                    }
+                    input.upload {
+                        right:0;
+                        margin:0;
+                        bottom:0;
+                        padding:0;
+                        opacity:0;
+                        outline:none;
+                        cursor:inherit;
+                        position:absolute;
+                        font-size:1000px !important;}
+                        span.upload-path {
+                        text-align: center;
+                        margin:20px;
+                        display:block;
+                        font-size: 80%;
+                        color:#3b5998;
+                        font-weight:bold;
+                        font-family:tahoma, arial, sans-serif;
+                    }
+    }
+    .files{
+        .share{
+            // display: none;
+        }
+
+    }
+    .folders{
+       .share{
+            // display: none;
+        } 
+    }
+    /**sass for common dialog*/
+    md-toolbar.md-default-theme {
+      background-color: #FFFFFF;
+      color: #fff;
+    }
+    
+    .md-icon-button {
+      color: #ccc;
+    }
+    
+    .md-button.md-default-theme:not([disabled]) {
+      background-color: #BDC0CE;
+    }
+     /**end of sass for common dialog*/
+}

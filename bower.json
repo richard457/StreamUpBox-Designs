@@ -1,0 +1,41 @@
+{
+  "name": "streamupbox.com",
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-animate": "~1.4.6",
+    "angular-formly": "~7.1.1",
+    "angular-material": "~0.10.0",
+    "angular-messages": "~1.4.6",
+    "angular-route": "~1.4.4",
+    "api-check": "~7.5.0",
+    "bootstrap": "~3.3.2",
+    "bootstrap-select": "~1.6.4",
+    "font-awesome": "~4.3.0",
+    "jquery": "1.11.3",
+    "jquery.atwho": "~1.3.2",
+    "ng-file-upload-shim": "~7.0.10",
+    "ngFx": "~1.1.0",
+    "socket.io": "~1.3.6",
+    "xregexp": "~2.0.0",
+    "ngInfiniteScroll": "~1.2.2",
+    "angular-masonry": "^0.15.0",
+    "ng-material-floating-button": "ng-mfb#^0.6.2",
+    "mousetrap": "^1.5.3",
+    "ng-contextmenu": "^0.4.1",
+    "ngReact": "^0.3.0",
+    "angular-drag-and-drop-lists": "^1.4.0",
+    "pouchdb": "^5.4.5",
+    "angular-pouchdb": "^4.3.0",
+    "Winstrap": "winstrap#^0.5.10"
+  },
+  "devDependencies": {
+    "angular-bootstrap": "~1.1.0",
+    "oh-snap": "*",
+    "angular-loading-bar": "^0.9.0",
+    "notie": "^3.2.0",
+    "angular-ui-router.stateHelper": "^1.3.1",
+    "angular-translate": "^2.11.1",
+    "angular-ui-select": "^0.19.1",
+    "angular-sanitize": "^1.5.8"
+  }
+}

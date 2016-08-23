@@ -1,0 +1,44 @@
+<md-dialog aria-label="Upload" style="margin-top:25px;z-index:20000;">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 style="color:#ccc">Share </h2>
+                <span flex></span>
+                <md-button style="color:black;" class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content class="upload-tpls">
+            <div ng-controller="UploadController" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter" class="positioning">
+
+                <div>
+                    
+                   <div class="share-email">
+                       <!--<ui-select multiple ng-model="emailObject.selectedEmails" theme="bootstrap"  style="width: 800px;" title="Choose this email">
+                            <ui-select-match placeholder="Select email...">{{$item.name}}</ui-select-match>
+                            <ui-select-choices repeat="email in emails | propsFilter: {name: $select.search, numero: $select.search}">
+                                <div ng-bind-html="email.name| highlight: $select.search"></div>
+                                <small>
+                                Name: {{email.name}}  | Type: {{email.type}} | 
+                                Numero: <span ng-bind-html="email.numero | highlight: $select.search"></span>
+                                </small>
+                            </ui-select-choices>
+                        </ui-select>-->
+                   </div>
+                    <div >
+                        <div>
+                            <div class="progress upload-indicator">
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+            </div>
+        </md-dialog-content>
+    </form>
+</md-dialog>

@@ -1,0 +1,9 @@
+  <md-list>
+  <md-item ng-repeat="notification  in notifications">
+  		<img ng-src="{{notification.avatar}}" class="img-responsive" style="width:60px;float:left;margin-right:12px;">
+        {{notification.body}}
+        <md-button>
+          <md-icon md-svg-src="img/icons/share.svg"></md-icon>
+        </md-button>
+  </md-item>
+</md-list>

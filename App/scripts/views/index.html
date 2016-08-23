@@ -1,0 +1,41 @@
+<meta charset="utf-8" >
+<head>
+      <title>Sbox(RW)</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <meta name="Description" content="StreamUpBox |StreamUpBox platform is online platform for file Storage and sharing with the mood of team-work in mind. ">
+      <meta name="Keywords" content="StrimUp,file sharing,video channels,online">
+      <link rel="shortcut icon" href="/img/shortcuticon.ico">
+      <meta name="Copyright" content="strimup  ltd">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/flaticon.css">
+      <link rel="stylesheet" href="css/common.css">
+      <!-- <link rel="stylesheet" href="css/circle-menu.min.css"> -->
+      <link rel="stylesheet" href="lib/ionic/css/angular-material.min.css">
+      <link rel="stylesheet" href="bower_resources/angular-material/angular-material.css">
+      <link rel="stylesheet" href="App/vendor/css/bootstrap-tagsinput.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/_notification.css">
+      <link rel="stylesheet" type="text/css" href="/bower_resources/notie/dist/notie.css">
+      <link rel="stylesheet" href="bower_resources/Winstrap/dist/css/winstrap.css" itle="no title" charset="utf-8">
+      <link rel="stylesheet" href="build/css/main.css">
+       
+    </head>
+<body ng-app="sync" layout="row">
+  <md-content id="content" >
+    <div ui-view></div>
+  </md-content>
+  <!-- <script src="https://apis.google.com/js/client.js"> </script> -->
+  <script src="build/scripts/angular.js"></script>
+  <script src="build/scripts/modules.js"></script>
+  <script src="App/vendor/toastr.min.js"></script>
+  <script src="bower_resources/ngInfiniteScroll/build/ng-infinite-scroll.js"></script><!--insert it after angular load and before appConfig-->
+  <script src="App/vendor/hoverCard.js"></script>
+  <script src="bower_resources/pouchdb/dist/pouchdb.min.js"></script>
+  <script>
+  
+      var db = new PouchDB('_doc');
+  </script>
+</body>
+</html>

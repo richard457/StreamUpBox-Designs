@@ -1,0 +1,49 @@
+<div class="col-sm-1 visible-lg  singup-wrapper" ng-controller="RegisterController">
+<li class="dropdown  list-unstyled">
+<button href="#" class="dropdown-toggle signup" data-toggle="dropdown" style="margin-left:20px;"><b>Create Account</b></button>
+<ul id="login-dp" class="dropdown-menu">
+    <li>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Create Account via</p>
+                    {{-- <div class="social-buttons">
+                        <a href="/auth/github" class="btn btn-fb"><i class="fa fa-dropbox"></i></a>
+                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                    </div> --}}
+                    <p></p>
+                    <div class="register-form-main-message"></div>
+                        <form class="form" role="form"  ng-submit="register(user)" ng-init="user={option:'register'}">
+                            <div class="form-group">
+                                    <label class="sr-only" for="">Username</label>
+                                    <input type="text" class="form-control" id="username" placeholder="User name" ng-model="user.username" required unique-username>
+                            </div>
+                            <div class="form-group">
+                                    <label class="sr-only" for="">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email address" ng-model="user.email" required unique-email>
+                            </div>
+                            <div class="form-group">
+                                    <label class="sr-only" for="">Phone (optional)</label>
+                                    <input type="tel" class="form-control" ng-model="user.phone" placeholder="Phone with country code.eg +250 783054874" ng-model="user.phone" required unique-phone>
+                            </div>
+                            <div class="form-group">
+                                    <label class="sr-only" for="">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="user.password" required>
+                            </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="">Confirm Password</label>
+                                    <input type="password" class="form-control" id="password-confirm" placeholder="Confirm Password" ng-model="user.confirmpassword" required>
+
+                            </div>
+                            <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                            </div>
+                        </form>
+                </div>
+                <div class="bottom text-center">
+                    <a href="#"><b>Aleady have account?</b></a>
+                </div>
+            </div>
+    </li>
+</ul>
+</li>
+</div>

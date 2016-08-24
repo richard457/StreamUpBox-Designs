@@ -1,5 +1,5 @@
 angular.module('sync')
-    .controller('FilesControllerAndFolders', function () {
+    .controller('FilesController', function ($scope) {
         $scope.files = [
             {
                 "id": 1,

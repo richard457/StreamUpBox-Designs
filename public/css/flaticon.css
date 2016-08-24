@@ -1,0 +1,59 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 18/03/2016 04:41
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+        font-size: 38px;
+font-style: normal;
+margin-left: 0px;
+}
+
+.flaticon-bin:before { content: "\f100"; }
+.flaticon-can:before { content: "\f101"; }
+.flaticon-can-1:before { content: "\f102"; }
+.flaticon-circle:before { content: "\f103"; }
+.flaticon-connection:before { content: "\f104"; }
+.flaticon-cross:before { content: "\f105"; }
+.flaticon-download:before { content: "\f106"; }
+.flaticon-interface:before { content: "\f107"; }
+.flaticon-interface-1:before { content: "\f108"; }
+.flaticon-interface-2:before { content: "\f109"; }
+.flaticon-interface-3:before { content: "\f10a"; }
+.flaticon-linked-people:before { content: "\f10b"; }
+.flaticon-mark:before { content: "\f10c"; }
+.flaticon-mp3:before { content: "\f10d"; }
+.flaticon-multimedia:before { content: "\f10e"; }
+.flaticon-music:before { content: "\f10f"; }
+.flaticon-people:before { content: "\f110"; }
+.flaticon-people-1:before { content: "\f111"; }
+.flaticon-shared-doc:before { content: "\f112"; }
+.flaticon-shared-folder:before { content: "\f113"; }
+.flaticon-social:before { content: "\f114"; }
+.flaticon-sound:before { content: "\f115"; }
+.flaticon-symbol:before { content: "\f116"; }
+.flaticon-talk-in-group:before { content: "\f117"; }
+.flaticon-technology:before { content: "\f118"; }
+.flaticon-upload:before { content: "\f119"; }
+.flaticon-uploaded:before { content: "\f11a"; }
+.flaticon-user:before { content: "\f11b"; }

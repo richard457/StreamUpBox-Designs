@@ -1,5 +1,5 @@
 angular.module("sync")
-    .controller('FolderController', ['$scope', 'Folder', 'User', 'DEBUG', '$stateParams', '$rootScope', 'folderLists', 'cacheFactory', 'Files', function ($scope, Folder, User, DEBUG, $stateParams, $rootScope, folderLists, cacheFactory, Files) {
+    .controller('FolderController', ['$scope', 'DEBUG', '$stateParams', '$rootScope', 'cacheFactory', function ($scope, DEBUG, $stateParams, $rootScope, cacheFactory) {
         $scope.foldes = [
             {
                 "id": 21,

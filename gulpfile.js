@@ -33,9 +33,9 @@ autoprefixer = require('gulp-autoprefixer'),
  // ngmin = require('gulp-ngmin'),
 
 input  = {
-      'html': './public/App/views/*.html',
-      'sass': './public/scss/*.scss',
-      'javascript':  './public/App/scripts/**/*.js'
+      'html': './App/views/*.html',
+      'sass': './scss/*.scss',
+      'javascript':  './App/scripts/**/*.js'
     },
 
     output = {

@@ -4,6 +4,30 @@
 
 //remove dependecies
 //,"infinite-scroll", ngfolderLists 'ng-mfb' ngContextMenu ngDialog
+var Logger=angular.module("Logger",[]);
+Logger.run(['$rootScope',function($rootScope){
+      // $rootScope.endPoint='https://streamupbox.com';
+      $rootScope.endPoint='http://localhost:8000';
+}])
+.constant('DEBUG',true);
+Logger.directive('signup', [function () {
+  return {
+    restrict: 'AE',
+    templateUrl:'App/scripts/views/signup.html'
+  };
+}])
+.directive('login', [function () {
+  return {
+    restrict: 'AE',
+    templateUrl:'App/scripts/views/login.html'
+  };
+}])
+.directive('shortcut', [function () {
+  return {
+    restrict: 'AE',
+    templateUrl:'App/scripts/views/shortcut.html'
+  };
+}]);
 angular.module("sync", ["ngRoute","angularFileUpload","ui.bootstrap","ui.router",'ngMaterial', 'material.svgAssetsCache',"pascalprecht.translate","ui.select","ngSanitize"])
 .constant('DEBUG',true)
 
@@ -16,16 +40,18 @@ angular.module("sync", ["ngRoute","angularFileUpload","ui.bootstrap","ui.router"
     $httpProvider.defaults.headers.common.authorization = 'Bearer 8EuqcMNkF2yP50Dicpv9hLRRp7WOSabPlCu22liY';
     $httpProvider.defaults.useXDomain = true;
     $sceProvider.enabled(false);
+
     
 }])
 .config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider,$scope){
           
           $stateProvider
           .state('Home', {
+
             url: "/Files",
-            templateUrl: '/App/scripts/views/files.html',
-            controller: 'FilesControllerAndFolders'
-          })
+            templateUrl:  "/views/files.html",
+            controller: 'FilesController'
+          });
           
           $urlRouterProvider.otherwise('/Files');
 }])
@@ -33,7 +59,7 @@ angular.module("sync", ["ngRoute","angularFileUpload","ui.bootstrap","ui.router"
 .directive('files', [function () {
   return {
     restrict: 'E',
-    templateUrl: '/App/scripts/views/components/files.html',
+    templateUrl: '/views/components/files.html',
     link: function (scope, el, attr) {
       //implements hover on files
       // el.hover(function() {
@@ -54,7 +80,7 @@ angular.module("sync", ["ngRoute","angularFileUpload","ui.bootstrap","ui.router"
 .directive('folders', [function () {
   return {
     restrict: 'E',
-    templateUrl: '/App/scripts/views/components/folders.html',
+    templateUrl: '/views/components/folders.html',
     link: function (scope, el, iAttrs) {
       // el.hover(function() {
       //   /* Stuff to do when the mouse enters the element */

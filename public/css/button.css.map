@@ -1,0 +1,1 @@
+{"version":3,"sources":["button.scss"],"names":[],"mappings":"AAAA;EACE,kBAAkB,EACnB","file":"button.css","sourcesContent":[".button{\n  background: white;\n}\n"],"sourceRoot":"/source/"}

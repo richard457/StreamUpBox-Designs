@@ -6,9 +6,10 @@ var io = require('socket.io')(server);
 
 // server.listen(8890);
 
-app.use(express.static('App/scripts/views'));
+app.use(express.static('public'));
 
-app.get('/index.html', function (req, res) {
+app.get('/', function (req, res) {
+   console.log(__dirname);
    res.sendFile( __dirname + "/" + "index.html" );
 })
 
@@ -22,7 +23,7 @@ app.get('/yourCustomRoute', function (req, res) {
    res.end(JSON.stringify(response));
 })
 
-var server = app.listen(8081, function () {
+var server = app.listen(8082, function () {
 
   var host = server.address().address
   var port = server.address().port
@@ -30,7 +31,3 @@ var server = app.listen(8081, function () {
   console.log("Example app listening at http://%s:%s", host, port)
 
 })
-
-
-
-

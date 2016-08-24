@@ -1,0 +1,31 @@
+textarea{
+  width: 100%;
+  height: 5em;
+  outline: 0;
+  outline-width: 0px;
+  resize: none;
+  border: 0px;
+  font-weight: 100;
+}
+/* remove border around all elements */
+
+:focus {
+    outline: none;
+    border: 0px;
+}
+a{
+  color: #009dff;  
+}
+*.container{
+  color: white;
+}
+
+/*css for files partial*/
+.share{
+    display: none;
+}
+#files:hover .share{
+    display: inline-block;
+        color: black;
+}
+
